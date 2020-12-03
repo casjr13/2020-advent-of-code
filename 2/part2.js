@@ -6,7 +6,7 @@ const validPasswords = passwords.filter(line => {
   const a = password[first - 1] === char;
   const b = password[second - 1] === char;
   const valid = (a && !b) || (!a && b);
-  // console.log(`f: ${first}, s: ${second}, c: ${char}, p: ${password}, a: ${password[first]} == ${char}, b: ${password[second]} == ${char}, valid: ${valid}`);
+  // console.log(`f: ${first}, s: ${second}, c: ${char}, p: ${password}, a: ${password[first - 1]} == ${char}, b: ${password[second - 1]} == ${char}, valid: ${valid}`);
   return valid;
 });
 
