@@ -1,1 +1,16 @@
+# Files Without Extension
+*
+!/**/
+!*.*
+
+# Specifically Include These Files
+!makefile
+
+# Haskell Compiled Files
+*.o
+*.hi
+
+# Log Files
+*.log
+
 node_modules/
