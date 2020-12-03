@@ -1,6 +1,5 @@
 const _ = require('lodash');
 const fs = require("fs");
-const { Z_MEM_ERROR } = require('zlib');
 const text = fs.readFileSync("./map.txt").toString('utf-8');
 const map = text.split("\n");
 const cols = map[0].length;
@@ -15,7 +14,7 @@ const slopes = [
 ];
 
 const treesPerSlope = slopes.map(([mx, my]) => countTrees(mx, my));
-console.log(treesPerSlope);
+// console.log(treesPerSlope);
 
 var product = _.reduce(treesPerSlope, (product, n) => _.multiply(product, n), 1);
 console.log(product);
