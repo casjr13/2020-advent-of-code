@@ -1,0 +1,11 @@
+{
+  "name": "2020-advent-of-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:casjr13/2020-advent-of-code.git",
+  "author": "Chris Salinas Jr. <chrissalinasjr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
