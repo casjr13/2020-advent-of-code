@@ -1,4 +1,4 @@
-all: clean part1 part2
+all: clean part1
 
 clean: clParseLib clPart1 clPart2
 
