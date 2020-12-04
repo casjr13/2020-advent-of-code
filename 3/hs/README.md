@@ -1,4 +1,4 @@
-# 3rd day of Advent of Code
+# 3rd day of Advent of Code 2020
 
 ## How to run
 
