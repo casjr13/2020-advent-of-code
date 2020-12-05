@@ -32,7 +32,7 @@ validPassport :: Runner Int
 validPassport = do
   let cs = range (BYR,PID)
   b <- loop cs
-  liftIO $ putStrLn $ if b then "Valid" else "Invalid"
+  -- liftIO $ putStrLn $ if b then "Valid" else "Invalid"
   return $ if b then 1 else 0
 
 getCriteria :: String -> Criteria

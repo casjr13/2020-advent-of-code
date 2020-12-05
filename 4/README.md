@@ -1,11 +1,13 @@
-# 3rd day of Advent of Code 2020
+# 4th day of Advent of Code 2020
 
 ## How to run
 
 ```
 make
-./part1
-./part2
+./part1 test1.txt
+./part1 passports.txt
+./part2 test2.txt
+./part2 passports.txt
 ```
 
 ## Instructions
