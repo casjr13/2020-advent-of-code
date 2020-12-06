@@ -4,8 +4,7 @@
 
 ```
 make
-./part1
-./part2
+./seats
 ```
 
 ## Instructions

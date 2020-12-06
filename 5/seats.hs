@@ -1,3 +1,4 @@
+import Data.List
 import System.IO
 
 convert :: Char -> String -> Int
@@ -18,7 +19,15 @@ getSeats handle seats = do
       -- putStrLn $ line ++ " => row " ++ show r ++ ", col " ++ show c ++ ", id " ++ show s
       getSeats handle (s:seats)
 
+findSeat :: [Int] -> Int
+findSeat [] = error "Not found"
+findSeat (a:b:s) = if a - b == 1
+  then findSeat (b:s)
+  else (a + b) `div` 2
+
 main = do
   handle <- openFile "seatcodes.txt" ReadMode
   seats <- getSeats handle []
-  print $ maximum seats
+  let sorted = reverse $ sort seats
+  putStrLn $ "Maximum: " ++ show (head sorted)
+  putStrLn $ "Missing: " ++ show (findSeat sorted)
